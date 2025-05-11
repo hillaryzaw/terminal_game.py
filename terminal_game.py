@@ -19,7 +19,6 @@ else:
 print(f"Crew - 'Alright, {galaxy} it is!\n")
 input("Press enter to continue.\n")
 
-
 # asteroid encounter
 Your_hp = 150
 print("Oh no! There is a big asteroid in our way.\nYour hp: 150\n")
@@ -38,7 +37,6 @@ else:
 print(f"Your hp: {Your_hp}\n")
 input("Press enter to continue.\n")
 
-
 # arrival to galaxy
 print(f"You have reached {galaxy}! Where would you like to go for adventure?")
 place = int(input("1. Towards the mountains\n2. Towards the ocean\n"))
@@ -54,7 +52,6 @@ else:
     print("You're encountering a giant squid!")
     monster = 'Giant Squid'
 input("\nPress enter to go to fight scene.\n")
-
 
 # fight scene
 monster_hp = 200
@@ -88,7 +85,6 @@ while monster_hp > 0 and Your_hp > 0:
     print(f"\nYour hp: {Your_hp}\n{monster}'s hp: {monster_hp}")
     round_num += 1
 
-
     if monster_hp > 0 and Your_hp > 0:
         platk = int(input("Choose your attack:\n1. Punch it\n2. Kick it\n3. Heal\n\n"))
         while platk != 1 and platk != 2 and platk!= 3:
@@ -104,7 +100,6 @@ while monster_hp > 0 and Your_hp > 0:
             Your_hp += 40
             print("You have gained 40 hp!")   
     print(f"\nYour hp: {Your_hp}\n{monster}'s hp: {monster_hp}")
-
 
     if Your_hp <= 0:
         print("\nYou have been defeated:( Try again?\n")
